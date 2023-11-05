@@ -17,7 +17,8 @@ body {
 main {
   flex-grow: 3;
   padding: 20px 60px;
-  height: 100dvh;
+  min-height: 100dvh;
+  height: auto;
 }
 
 h1 {
