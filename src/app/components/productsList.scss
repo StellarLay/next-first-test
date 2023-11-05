@@ -1,0 +1,73 @@
+.apartments-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: space-between;
+  grid-gap: 20px;
+
+  .apartment.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+
+    .item__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      img {
+        width: 70%;
+        height: 240px;
+      }
+    }
+
+    .item__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 150px;
+      margin-top: 10px;
+
+      .item__content-top {
+        display: flex;
+        flex-direction: column;
+
+        .item__content-top__head {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .item__content-title {
+          font-weight: bold;
+        }
+
+        .item__content-rating {
+          display: flex;
+          align-items: center;
+          height: 16px;
+
+          .star-icon {
+            width: 15px;
+            height: 15px;
+          }
+
+          .rating-value {
+            font-size: 13px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .item__views {
+        margin: 8px 0 14px;
+        color: #8b8b8b;
+        font-size: 14px;
+      }
+    }
+  }
+}
